@@ -4,6 +4,9 @@
 #### January 2018  AngularJS/Express.js/Node.js Demonstration
 
  
+Cloud demos (if deployed) at:
+1. [Heroku](https://angularalpha-101-02.herokuapp.com/#/home)   
+ 
 A small basic application to introduce some Angular concepts.
 This is a minimal index.htm and app.js
 .\partials\home.html contains the view.
