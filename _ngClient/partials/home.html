@@ -1,0 +1,41 @@
+<div class="row">
+	<div class="col-md-12" >
+	<h1>Home</h1>
+
+	https://www.jquery-az.com/6-examples-to-explain-angular-ng-repeat-directive/
+
+	<br><br>
+	<h4>raw products with no presentation styling</h4>
+	{{products}}
+	<br> 
+	<h4>iterate the products with ng-repeat (again no styling)</h4>
+	<br> 
+	<div ng-repeat="P in products">
+	  {{P.id}}  {{P.name}}   {{P.quality}}  {{P.quantity}} 
+	</div>
+
+	<br> 
+	<h4>accessing a specific products element - 0 to n-1, in this case the last element [2]</h4>
+	<br> 
+	{{products[2].name}}  {{products[2].quantity}} 
+
+	<br> <br> 
+	
+	<h4>bi-directional input - html to $scope and vice-versa</h4>
+	<br> 
+	<button type="button"  ng-click="addProduct()"  >Add Product</button>
+	<label>Check me to make products readonly: <input type="checkbox" ng-model="checked"></label><br/>
+	
+	
+	<br><br>
+	<div ng-repeat="P in products">
+	 <input   type="text" ng-model="P.id"        ng-readonly="true" />
+	 <input   type="text" ng-model="P.name"     ng-readonly="checked" />
+	 <input   type="text" ng-model="P.quality"  ng-readonly="checked" />	 
+	 <input   type="text" ng-model="P.quantity" ng-readonly="checked" />
+	  
+	</div>	
+	
+	</div>
+</div>
+ 
